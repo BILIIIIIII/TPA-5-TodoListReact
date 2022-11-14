@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------------------------------------- */
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 32px;
+  animation: down 3s ease-out;
+}
+
+@media (max-width: 690px) {
+  #logo h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    gap: 12px;
+  }
+}
+
+span {
+  color: lightgreen;
+}
+
+ul {
+  display: flex;
+}
+
+nav ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  margin: 0 4px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
