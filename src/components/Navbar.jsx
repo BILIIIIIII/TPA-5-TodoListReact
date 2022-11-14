@@ -8,7 +8,7 @@ function Navbar() {
       <div id="logo">
         <img src="./public/book.svg" alt="" />
         <h3 className="logo">
-          Nyoba<span>Bookmark</span>
+          Nyoba<span>TodoList</span>
         </h3>
       </div>
       <InputForm />

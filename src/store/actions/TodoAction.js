@@ -1,6 +1,7 @@
 export const ADD_TODOLIST = "ADD_TODOLIST";
 export const REMOVE_TODOLIST = "REMOVE_TODOLIST";
 export const EDIT_TODOLIST = "EDIT_TODOLIST";
+export const COMPLETED_TODOLIST = "COMPLETED_TODOLIST";
 
 export function addTodo(title) {
   return {
@@ -11,12 +12,22 @@ export function addTodo(title) {
 
 export const removeTodo = (id) => ({
   type: REMOVE_TODOLIST,
-  id,
+  payload: id,
 });
 
-export function editTodo(title) {
+export function editTodo(id) {
   return {
     type: EDIT_TODOLIST,
-    title,
+    payload: {
+      id: id,
+      value: payload,
+    },
+  };
+}
+
+export function complete(id) {
+  return {
+    type: COMPLETED_TODOLIST,
+    id,
   };
 }
