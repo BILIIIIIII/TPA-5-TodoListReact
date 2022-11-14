@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------------------------------------- */
+
+.filter {
+  gap: 20px;
+  animation: fade 4s ease;
+}
+
+.filter li {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgb(90, 184, 90);
+  color: rgb(203, 255, 203);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin: 0 4px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 280px) {
+  .filter li {
+    font-size: 6px;
+
+    padding: 4px 12px;
+  }
+}
+
+.filter li:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid rgb(23, 80, 23);
+  box-shadow: 6px 6px 20px rgb(71, 145, 71);
+  transform: translate(-2px, -2px);
+}

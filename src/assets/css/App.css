@@ -1,0 +1,52 @@
+#root {
+  /* max-width: 100%; */
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+#container {
+  padding: 1rem 6rem;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+@keyframes down {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateX(-100px);
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translateX(200px);
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

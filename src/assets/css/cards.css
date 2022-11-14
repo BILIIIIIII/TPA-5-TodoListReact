@@ -1,0 +1,97 @@
+/* ----------------------------------------------------------------------------------------------- */
+
+.checkbox {
+  margin-right: 16px;
+}
+
+#cards {
+  display: flex;
+  color: white;
+  padding: 16px;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: fade 2s ease;
+}
+@media (max-width: 1115px) {
+  #container {
+    padding: 16px;
+  }
+
+  #cards {
+    display: flex;
+    /* justify-content: center; */
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 10rem;
+  height: 9rem;
+  /* max-height: 2rem; */
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 280px) {
+  .card {
+    /* align-items: center; */
+    width: 3.5rem;
+    height: 3.5rem;
+    /* max-height: 2rem; */
+  }
+}
+.card:hover {
+  border: 1px solid rgb(23, 80, 23);
+  border-radius: 32px 16px 16px 16px;
+  box-shadow: 6px 6px 20px rgb(71, 145, 71);
+  transform: translate(-2px, -2px);
+}
+
+.card p {
+  color: black;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.desc {
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  justify-content: left;
+}
+
+.bottom {
+  display: flex;
+  justify-content: right;
+  gap: 4px;
+}
+
+.bxs-pencil {
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.bxs-pencil:hover {
+  color: white;
+  background-color: rgb(116, 255, 135);
+}
+
+.bxs-trash {
+  color: rgb(255, 116, 116);
+  border-radius: 50%;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.bxs-trash:hover {
+  color: white;
+  background-color: rgb(255, 116, 116);
+}
